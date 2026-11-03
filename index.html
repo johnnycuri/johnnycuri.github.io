@@ -76,6 +76,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:26px 0 40px;bor
 .dlg{max-width:380px;margin:20vh auto 0;background:var(--card);border:1px solid var(--red);border-radius:16px;padding:20px;text-align:center}
 .visitas{display:inline-flex;align-items:center;gap:8px;margin-top:12px;background:#0b0722cc;border:2px solid var(--gold);border-radius:999px;padding:6px 18px;font-weight:800;font-size:15px}.visitas b{color:var(--gold);font-size:18px}.dot{width:9px;height:9px;border-radius:50%;background:#27d17f;box-shadow:0 0 8px #27d17f;animation:pl 1.6s infinite}@keyframes pl{50%{opacity:.35}}
 .coments{margin:10px 0 40px;background:#0b0722cc;border:1px solid var(--gold);border-radius:18px;padding:18px 20px}.coments h2{margin:0 0 4px;font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:1px;color:var(--gold)}.coments p{margin:0 0 14px;color:var(--mut);font-size:13.5px}
+.tipcom{margin:0 0 16px;background:#27d17f1f;border:1px solid #27d17f;border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.5}.tipcom b{color:#fff}
 </style>
 <script data-goatcounter="https://johnnycuri.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -107,7 +108,7 @@ var SKELETON = ''
  + '</div><div class="frow"><button class="btn btn-gold" id="f_save">Publicar cuenta</button><button class="btn btn-ghost" id="f_cancel" style="display:none">Cancelar edición</button><span class="status" id="f_status"></span></div></section>'
  + '<div class="bar"><div class="tabs" id="tabs"></div><input class="search" id="q" placeholder="Buscar skin o héroe (ej. Gojo, Kagura, Legend)"></div>'
  + '<div class="grid" id="grid"></div>'
- + '<section class="coments" id="comentarios"><h2>💬 Comentarios</h2><p>Deja tu opinión, pregunta por una cuenta o cuéntanos tu experiencia comprando con Johnny Curi MLBB.</p><div id="disqus_thread"></div></section></main>'
+ + '<section class="coments" id="comentarios"><h2>💬 Comentarios</h2><p>Deja tu opinión, pregunta por una cuenta o cuéntanos tu experiencia comprando con Johnny Curi MLBB.</p><div class="tipcom">✅ <b>No necesitas registrarte:</b> escribe tu comentario, pon tu <b>nombre</b> y <b>correo</b>, marca la casilla <b>“Prefiero comentar como invitado”</b> y toca la flecha ➜.</div><div id="disqus_thread"></div></section></main>'
  + '<footer>Johnny Curi MLBB · Compra · Venta · Alquiler · WhatsApp +51 931 771 312</footer>'
  + '<div class="modal" id="modal"><div class="mbox"><div class="mhead"><b id="mtitle"></b><div style="display:flex;gap:8px"><a class="btn btn-wa" id="mwa" style="padding:8px 14px">WhatsApp</a><button class="x" id="mclose">✕</button></div></div><img id="mimg" alt=""></div></div>'
  + '<div class="modal" id="confirm"><div class="dlg"><p id="ctext" style="margin:0 0 16px"></p><div class="actions"><button class="btn btn-ghost" id="cno">Cancelar</button><button class="btn btn-red" id="cyes">Eliminar</button></div></div></div>';
