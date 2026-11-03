@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Johnny Curi MLBB · Cuentas en venta</title>
+<meta name="description" content="Compra, venta y alquiler de cuentas de Mobile Legends. WhatsApp +51 931 771 312">
+<meta property="og:title" content="Johnny Curi MLBB · Cuentas en venta">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;800&display=swap">
+<style id="css">
+:root{--gold:#ffc846;--gold2:#ff9a1e;--bg1:#0f0a2e;--bg2:#1c0f3d;--card:#171037;--line:#3a2d70;--txt:#f3f4ff;--mut:#a9aed0;--green:#27d17f;--red:#ff4d5e;--amber:#ffb020;--pink:#ff5096}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Poppins,system-ui,sans-serif;color:var(--txt);background:radial-gradient(1200px 600px at 50% -10%,rgba(255,170,40,.25),transparent 60%),radial-gradient(900px 700px at 0% 60%,rgba(120,60,255,.25),transparent 60%),linear-gradient(180deg,var(--bg2),var(--bg1));background-attachment:fixed;min-height:100vh}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+header{text-align:center;padding:34px 0 18px;border-bottom:3px solid var(--gold);background:linear-gradient(90deg,#3a0f4a,#280a3c 50%,#3a0f4a)}
+.brand{font-family:'Bebas Neue',sans-serif;font-size:clamp(46px,9vw,92px);line-height:.9;letter-spacing:2px;background:linear-gradient(180deg,#fff5aa,#ff9a19);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(255,160,30,.45))}
+.sub{margin-top:10px;display:inline-block;background:var(--red);border:3px solid var(--gold);border-radius:999px;padding:6px 22px;font-weight:800;letter-spacing:1px;font-size:clamp(14px,2.6vw,20px)}
+.contact{margin-top:14px;color:var(--mut);font-size:14px}
+.contact a{color:var(--gold);text-decoration:none;font-weight:600}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:22px 0 16px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{background:#ffffff10;border:1px solid var(--line);color:var(--txt);padding:8px 16px;border-radius:999px;cursor:pointer;font:600 14px Poppins,sans-serif}
+.tab.on{background:var(--gold);color:#1a1030;border-color:var(--gold)}
+.search{flex:1;min-width:220px;max-width:420px;background:#ffffff10;border:1px solid var(--line);color:var(--txt);border-radius:999px;padding:10px 16px;font:14px Poppins,sans-serif}
+.search::placeholder{color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;padding-bottom:40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 30px #0006;transition:transform .15s}
+.card:hover{transform:translateY(-3px);border-color:var(--gold)}
+.card.sold{opacity:.6}
+.thumb{position:relative;aspect-ratio:4/3;overflow:hidden;cursor:zoom-in;background:#000}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.badge{position:absolute;top:10px;right:10px;padding:4px 12px;border-radius:999px;font-weight:800;font-size:12px;letter-spacing:.5px;color:#0d0a20}
+.b-disponible{background:var(--green)}.b-reservada{background:var(--amber)}.b-vendida{background:var(--red);color:#fff}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.num{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--gold);line-height:1}
+.meta{display:flex;gap:6px;flex-wrap:wrap}
+.chip{background:#ffffff12;border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:12px;font-weight:600}
+.price{font-weight:800;font-size:20px}
+.price.ask{font-size:15px;color:var(--mut);font-weight:600}
+.desc{font-size:12.5px;color:var(--mut);line-height:1.45;margin:0;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.desc.open{-webkit-line-clamp:unset}
+.more{background:none;border:0;color:var(--gold);font:600 12px Poppins,sans-serif;padding:0;cursor:pointer;align-self:flex-start}
+.actions{display:flex;gap:8px;margin-top:auto;padding-top:6px}
+.btn{flex:1;text-align:center;border:0;border-radius:12px;padding:10px 12px;font:700 14px Poppins,sans-serif;cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn-gold{background:linear-gradient(180deg,#ffe07a,#ffad2a);color:#241400}
+.btn-wa{background:#25d366;color:#05210f}
+.btn-ghost{background:#ffffff14;color:var(--txt);border:1px solid var(--line)}
+.btn-red{background:var(--red);color:#fff}
+.empty{text-align:center;color:var(--mut);padding:60px 10px;grid-column:1/-1}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:26px 0 40px;border-top:1px solid var(--line)}
+/* admin */
+.admin{display:none;margin:18px 0;background:#ffffff0c;border:1px dashed var(--gold);border-radius:16px;padding:14px 16px}
+.admin.show{display:block}
+.admin h2{margin:0 0 4px;font-size:18px;color:var(--gold)}
+.admin p.note{margin:0 0 10px;font-size:12.5px;color:var(--mut)}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.form label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--mut);font-weight:600}
+.form input,.form select,.form textarea{background:#0b0722;border:1px solid var(--line);color:var(--txt);border-radius:10px;padding:9px 10px;font:14px Poppins,sans-serif}
+.form .wide{grid-column:1/-1}
+.form textarea{min-height:90px;resize:vertical}
+.frow{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center}
+.frow .btn{flex:0 0 auto}
+.status{font-size:13px;color:var(--gold)}
+.admrow{display:flex;gap:6px;margin-top:6px}
+.admrow select,.admrow button{flex:1;font:600 12px Poppins,sans-serif;border-radius:9px;padding:7px;border:1px solid var(--line);background:#0b0722;color:var(--txt);cursor:pointer}
+/* modal */
+.modal{position:fixed;inset:0;background:#05031acc;backdrop-filter:blur(4px);display:none;z-index:50;overflow:auto;padding:16px}
+.modal.show{display:block}
+.mbox{max-width:900px;margin:0 auto;background:var(--card);border:1px solid var(--gold);border-radius:16px;overflow:hidden}
+.mhead{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 14px;background:#120b2fee;border-bottom:1px solid var(--line);z-index:2}
+.mhead b{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--gold);letter-spacing:1px}
+.mbox img{width:100%;display:block}
+.x{background:#ffffff18;border:0;color:#fff;border-radius:10px;width:38px;height:38px;font-size:20px;cursor:pointer}
+.dlg{max-width:380px;margin:20vh auto 0;background:var(--card);border:1px solid var(--red);border-radius:16px;padding:20px;text-align:center}
+</style>
+</head>
+<body>
+<script id="state" type="application/json">{"cuentas": [{"num": "1136", "skins": "591", "legend": "4", "precio": "", "estado": "disponible", "img": "cuenta_1136.jpg", "thumb": "thumb_1136.jpg", "desc": "LEGEND ALUCARD FANNY GUSION LUNOX - VALENTINE LANCELOT - STAR WARS ALUCARD - ATTACK ON TITAN FANNY MARTIS YIN - JJK YIN MELISSA XAVIER - NARUTO SUYOU LUKAS VALE - HUNTER X HUNTER HARITH JULIAN - KOF KARINA GUSION GUINEVERE - ASPIRANTES RUBY LESLEY ANGELA - TRANSFORMERS ROGER - DUCATI IRITHEL BENEDETTA - SAINT SEIYA BADANG - BOB ESPONJA CICLOPE GLOO - NEYMAR BRUNO - PRIME GRANGER BEATRIX - SOUL VESSELS CECILION AAMON - KUNG FU PANDA THAMUZ - SANRIO CHANG'E FLORYN - STAR HAYABUSA KAGURA SUN KARRIE VALE - COLLECTOR ALICE YI SUN-SHIN CICLOPE AURORA GUSION CLAUDE LING SILVANNA FLORYN - LUCKYBOX SABER KARINA ZILONG HAYABUSA ROGER KARRIE ODETTE URANUS LEOMORD GUINEVERE - ZODIAC KARINA HILDA LANCELOT ZHASK HELCURT MARTIS SELENA LUNOX BADANG - M-SERIES ALDOUS CLAUDE GRANGER YU ZHONG BEATRIX - MSC NATAN ZILONG JAWHEAD LEOMORD - CHAMPION ESTES LANCELOT - S.T.U.N. SELENA - ATOMIC POP MIYA EUDORA - 515 HARITH ZILONG - COVENANT LESLEY BENEDETTA - CREATE KADITA LUO YI - MYSTIC MEOW SILVANNA - ALL STAR YU ZHONG - NIVEL 94 - 8464 PARTIDAS - 6 AÑOS - RANGO MÁS ALTO ★177 - MEDALLA GLORIA MÍTICA"}, {"num": "1137", "skins": "411", "legend": "2", "precio": "", "estado": "disponible", "img": "img/cuenta_1137.jpg", "thumb": "img/thumb_1137.jpg", "desc": "LEGEND LAYLA LUNOX - JJK XAVIER - NARUTO LUKAS JULIAN KALEA VALE - ATTACK ON TITAN YIN MARTIS - HUNTER X HUNTER HARITH JULIAN - KOF KARINA AURORA GUINEVERE DYRROTH - ASPIRANTES RUBY VEXANA - SAINT SEIYA BADANG - KISHIN DENSETSU ANGELA - SOUL VESSELS BENEDETTA - BOB ESPONJA CICLOPE - HELLO KITTY CHANG'E FLORYN - SEASONS FLORYN - STAR SUN KAGURA LESLEY ANGELA VALE - COLLECTOR LAYLA NATALIA AURORA ANGELA FLORYN XAVIER - LUCKYBOX KAGURA CHOU ESTES ODETTE - CLOUD KAGURA XAVIER - PRIME GRANGER - ZODIAC MINOTAURO AURORA ODETTE - MYTHIC CLINT FARAMIS - M7 GRANGER - P.ACE ZHUXIN - ATOMIC POP MIYA - ANNIVERSARY AKAI - LUNAR FEST RAFAELA - COVENANT EUDORA LESLEY - MYSTIC MEOW LESLEY SILVANNA JULIAN - VALENTINE FANNY SILVANNA - CREATE ODETTE KADITA LUO YI - TIDES PHARSA - NIVEL 69 - RANGO MÁS ALTO ★134 - MEDALLA GLORIA MÍTICA"}, {"num": "1138", "skins": "689", "legend": "5", "precio": "", "estado": "disponible", "img": "cuenta_1138.jpg", "thumb": "thumb_1138.jpg", "desc": "LEGEND ALUCARD GORD GUSION LUNOX GUINEVERE - JJK XAVIER YIN MELISSA JULIAN - NARUTO LUKAS VALE - HUNTER X HUNTER HARITH JULIAN CECILION - TRANSFORMERS JOHNSON ROGER ALDOUS GRANGER X.BORG POPOL Y KUPA - KOF KARINA CHOU GUINEVERE MASHA - ASPIRANTES RUBY ANGELA CHANG'E - KISHIN DENSETSU KARRIE LANCELOT ANGELA - SAINT SEIYA CHOU BADANG - SANRIO CHANG'E FLORYN - KUNG FU PANDA THAMUZ LING - BOB ESPONJA CICLOPE - NEYMAR BRUNO - PRIME GRANGER YU ZHONG BEATRIX - STAR HAYABUSA GORD KAGURA KARRIE LESLEY ANGELA VALE - COLLECTOR NANA NATALIA AURORA HARLEY PHARSA LESLEY HANABI KHUFRA GUINEVERE LING SILVANNA PAQUITO NATAN EDITH NOVARIA - LUCKYBOX SABER ALICE ALUCARD KARINA ZILONG FANNY HAYABUSA FREYA CHOU ALPHA RUBY MOSKOV JOHNSON ZHASK KAJA SELENA - CLOUD KAGURA - ZODIAC KARINA MINOTAURO HILDA AURORA IRITHEL ODETTE LANCELOT ZHASK HELCURT MARTIS SELENA LUNOX BADANG - M-SERIES CLINT ROGER GRANGER BEATRIX YU ZHONG - MSC ATLAS VALENTINA JAWHEAD LEOMORD CLAUDE - MPL JAWHEAD KADITA BRODY MATHILDA - M-WORLD LING WANWAN YIN - CHAMPION ESTES LANCELOT HARITH JOY - S.T.U.N. CHOU SELENA BRODY - MYTHIC HYLOS FARAMIS - ABYSS SELENA - EXORCISTS YU ZHONG - SPARKLE MELISSA FREDRINN - NIVEL 125 - 13515 PARTIDAS - RANGO MÁS ALTO ★333 - COLECCIONISTA MUNDIAL III", "fecha": "2026-11-02"}, {"num": "1139", "skins": "756", "legend": "7", "precio": "", "estado": "disponible", "img": "cuenta_1139.jpg", "thumb": "thumb_1139.jpg", "desc": "LEGEND MIYA ALUCARD FREYA JOHNSON LUNOX GRANGER GUINEVERE - JJK XAVIER - NARUTO JULIAN LUKAS VALE - HUNTER X HUNTER HARITH - STAR WARS ARGUS ALUCARD - TRANSFORMERS ROGER GRANGER - KOF KARINA AURORA CHOU GUINEVERE MASHA DYRROTH GUSION - ASPIRANTES RUBY VEXANA LESLEY ANGELA GUINEVERE - KISHIN DENSETSU LANCELOT - SAINT SEIYA BADANG - SANRIO CLAUDE FLORYN - PRIME CLAUDE YU ZHONG BEATRIX - STAR HAYABUSA GORD KAGURA KARRIE LESLEY ANGELA VALE - COLLECTOR NANA YI SUN-SHIN HARLEY IRITHEL GUSION ALDOUS HARITH BADANG KHUFRA ESMERALDA ATLAS AAMON NOVARIA ARLOTT - LUCKYBOX ALICE KARINA AKAI ZILONG FANNY HAYABUSA FREYA ALPHA RUBY MOSKOV ROGER KARRIE LANCELOT MARTIS CHANG'E SELENA GUINEVERE - CLOUD EDITH - ZODIAC KARINA MINOTAURO HILDA AURORA IRITHEL ODETTE LANCELOT ZHASK HELCURT MARTIS SELENA LUNOX BADANG - M-SERIES ROGER CLAUDE YU ZHONG BEATRIX PAQUITO - MSC ATLAS VALENTINA - CHAMPION ESTES LANCELOT JOY - S.T.U.N. CHOU - COVENANT EUDORA LESLEY BENEDETTA - MYTHIC CLINT HYLOS FARAMIS - ABYSS ALPHA - EXORCISTS KAGURA - SPARKLE MELISSA FREDRINN - P.ACE FANNY CICI ZHUXIN - NIVEL 159 - 16742 PARTIDAS - RANGO MÁS ALTO ★89 - MEDALLA GLORIA MÍTICA - COLECCIONISTA MUNDIAL", "fecha": "2026-11-02"}]}</script>
+<script id="app">
+(function(){
+var STATE = JSON.parse(document.getElementById('state').textContent || '{"cuentas":[]}');
+if(!STATE.cuentas) STATE.cuentas = [];
+if(window.CUENTAS && window.CUENTAS.length) STATE.cuentas = window.CUENTAS.map(function(c){c.num=String(c.num);c.estado=String(c.estado||'disponible').toLowerCase();return c;});
+var APP_SRC = document.getElementById('app').textContent;
+var CSS_SRC = document.getElementById('css').textContent;
+var WA = '51931771312';
+var SKELETON = ''
+ + '<header><div class="wrap"><div class="brand">JOHNNY CURI MLBB</div>'
+ + '<div class="sub">CUENTAS EN VENTA</div>'
+ + '<div class="contact">Compra · Venta · Alquiler &nbsp;|&nbsp; WhatsApp <a href="https://wa.me/' + WA + '">+51 931 771 312</a> &nbsp;|&nbsp; YouTube <a href="https://www.youtube.com/@mobasunMLBB">@mobasunMLBB</a></div></div></header>'
+ + '<main class="wrap">'
+ + '<section class="admin" id="admin"><h2 id="ftitle">➕ Subir cuenta</h2><p class="note">Solo tú ves este panel. Sube la imagen del catálogo (Cuenta_N.jpg) y llena los datos. Los compradores solo ven el catálogo.</p>'
+ + '<div class="form">'
+ + '<label class="wide">Imagen del catálogo (JPG/PNG, máx. 20 MB)<input type="file" id="f_img" accept="image/*"></label>'
+ + '<label>N° de cuenta<input id="f_num" inputmode="numeric" placeholder="1138"></label>'
+ + '<label>Total de skins<input id="f_skins" inputmode="numeric" placeholder="411"></label>'
+ + '<label>Skins Legend<input id="f_legend" inputmode="numeric" placeholder="2"></label>'
+ + '<label>Precio (opcional)<input id="f_precio" placeholder="S/ 350"></label>'
+ + '<label>Estado<select id="f_estado"><option value="disponible">Disponible</option><option value="reservada">Reservada</option><option value="vendida">Vendida</option></select></label>'
+ + '<label class="wide">Descripción (skins destacadas)<textarea id="f_desc" placeholder="LEGEND LAYLA LUNOX - JJK XAVIER - NARUTO ..."></textarea></label>'
+ + '</div><div class="frow"><button class="btn btn-gold" id="f_save">Publicar cuenta</button><button class="btn btn-ghost" id="f_cancel" style="display:none">Cancelar edición</button><span class="status" id="f_status"></span></div></section>'
+ + '<div class="bar"><div class="tabs" id="tabs"></div><input class="search" id="q" placeholder="Buscar skin o héroe (ej. Gojo, Kagura, Legend)"></div>'
+ + '<div class="grid" id="grid"></div></main>'
+ + '<footer>Johnny Curi MLBB · Compra · Venta · Alquiler · WhatsApp +51 931 771 312</footer>'
+ + '<div class="modal" id="modal"><div class="mbox"><div class="mhead"><b id="mtitle"></b><div style="display:flex;gap:8px"><a class="btn btn-wa" id="mwa" style="padding:8px 14px">WhatsApp</a><button class="x" id="mclose">✕</button></div></div><img id="mimg" alt=""></div></div>'
+ + '<div class="modal" id="confirm"><div class="dlg"><p id="ctext" style="margin:0 0 16px"></p><div class="actions"><button class="btn btn-ghost" id="cno">Cancelar</button><button class="btn btn-red" id="cyes">Eliminar</button></div></div></div>';
+var root = document.createElement('div'); root.innerHTML = SKELETON; document.body.appendChild(root);
+var $ = function(id){return document.getElementById(id)};
+var filter = 'disponible', query = '', artifact = null, assets = null, editing = null;
+var LABEL = {disponible:'DISPONIBLE', reservada:'RESERVADA', vendida:'VENDIDA'};
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function waLink(n){return 'https://wa.me/' + WA + '?text=' + encodeURIComponent('Hola Johnny, me interesa la Cuenta #' + n + ' que vi en tu página.')}
+function sorted(){
+  var order = {disponible:0, reservada:1, vendida:2};
+  return STATE.cuentas.slice().sort(function(a,b){return (order[a.estado]-order[b.estado]) || (Number(a.num)-Number(b.num))});
+}
+function renderTabs(){
+  var c = {todas:STATE.cuentas.length, disponible:0, reservada:0, vendida:0};
+  STATE.cuentas.forEach(function(x){c[x.estado]++});
+  var t = [['disponible','Disponibles'],['reservada','Reservadas'],['vendida','Vendidas'],['todas','Todas']];
+  $('tabs').innerHTML = t.map(function(p){return '<button class="tab'+(filter===p[0]?' on':'')+'" data-f="'+p[0]+'">'+p[1]+' ('+c[p[0]]+')</button>'}).join('');
+}
+function render(){
+  renderTabs();
+  var q = query.trim().toLowerCase();
+  var list = sorted().filter(function(x){
+    if(filter!=='todas' && x.estado!==filter) return false;
+    if(!q) return true;
+    return (('cuenta #'+x.num+' '+(x.desc||'')).toLowerCase().indexOf(q) >= 0);
+  });
+  if(!list.length){ $('grid').innerHTML = '<div class="empty">'+(STATE.cuentas.length?'No hay cuentas con ese filtro.':'Todavía no hay cuentas publicadas.')+'</div>'; return; }
+  $('grid').innerHTML = list.map(function(x){
+    var i = STATE.cuentas.indexOf(x);
+    var meta = '';
+    if(x.skins) meta += '<span class="chip">'+esc(x.skins)+' skins</span>';
+    if(x.legend) meta += '<span class="chip">'+esc(x.legend)+' Legend</span>';
+    var price = x.precio ? '<div class="price">'+esc(x.precio)+'</div>' : '<div class="price ask">Precio a consultar</div>';
+    var adm = (artifact && assets) ? '<div class="admrow"><select data-st="'+i+'">'+['disponible','reservada','vendida'].map(function(s){return '<option value="'+s+'"'+(x.estado===s?' selected':'')+'>'+LABEL[s]+'</option>'}).join('')+'</select><button data-ed="'+i+'">Editar</button><button data-del="'+i+'">Eliminar</button></div>' : '';
+    return '<article class="card'+(x.estado==='vendida'?' sold':'')+'"><div class="thumb" data-open="'+i+'"><img loading="lazy" src="'+esc(x.thumb||x.img)+'" alt="Cuenta #'+esc(x.num)+'"><span class="badge b-'+x.estado+'">'+LABEL[x.estado]+'</span></div>'
+      + '<div class="body"><div class="num">CUENTA #'+esc(x.num)+'</div><div class="meta">'+meta+'</div>'+price
+      + (x.desc ? '<p class="desc" id="d'+i+'">'+esc(x.desc)+'</p><button class="more" data-more="'+i+'">Ver más</button>' : '')
+      + '<div class="actions"><button class="btn btn-gold" data-open="'+i+'">Ver catálogo</button>'
+      + (x.estado!=='vendida' ? '<a class="btn btn-wa" href="'+waLink(x.num)+'" target="_blank" rel="noopener">WhatsApp</a>' : '')
+      + '</div>'+adm+'</div></article>';
+  }).join('');
+}
+function openModal(i){
+  var x = STATE.cuentas[i];
+  $('mtitle').textContent = 'CUENTA #' + x.num; $('mimg').src = x.img; $('mwa').href = waLink(x.num);
+  $('mwa').style.display = x.estado==='vendida' ? 'none' : '';
+  $('modal').classList.add('show'); $('modal').scrollTop = 0;
+}
+document.addEventListener('click', function(e){
+  var t = e.target.closest('[data-open],[data-f],[data-more],[data-ed],[data-del]');
+  if(!t) return;
+  if(t.dataset.open!=null) openModal(+t.dataset.open);
+  else if(t.dataset.f){ filter = t.dataset.f; render(); }
+  else if(t.dataset.more!=null){ var d=$('d'+t.dataset.more); d.classList.toggle('open'); t.textContent = d.classList.contains('open')?'Ver menos':'Ver más'; }
+  else if(t.dataset.ed!=null) startEdit(+t.dataset.ed);
+  else if(t.dataset.del!=null) askDelete(+t.dataset.del);
+});
+document.addEventListener('change', function(e){
+  if(e.target.dataset && e.target.dataset.st!=null){
+    var next = clone(); next.cuentas[+e.target.dataset.st].estado = e.target.value; save(next, 'Estado actualizado');
+  }
+});
+$('q').addEventListener('input', function(e){ query = e.target.value; render(); });
+$('mclose').onclick = function(){ $('modal').classList.remove('show'); };
+$('modal').onclick = function(e){ if(e.target.id==='modal') $('modal').classList.remove('show'); };
+document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ $('modal').classList.remove('show'); $('confirm').classList.remove('show'); } });
+
+function clone(){ return JSON.parse(JSON.stringify(STATE)); }
+function buildDoc(st){
+  var json = JSON.stringify(st).replace(/</g,'\\u003c');
+  return '<!DOCTYPE html>\n<html lang="es">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Johnny Curi MLBB · Cuentas en venta</title>\n'
+    + '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;800&display=swap">\n'
+    + '<style id="css">' + CSS_SRC + '</style>\n</head>\n<body>\n'
+    + '<script id="state" type="application/json">' + json + '<' + '/script>\n'
+    + '<script id="app">' + APP_SRC + '<' + '/script>\n</body>\n</html>\n';
+}
+function setStatus(s){ $('f_status').textContent = s; }
+async function save(next, msg){
+  if(!artifact) return;
+  setStatus('Guardando…');
+  try { await artifact.publish(buildDoc(next)); setStatus(msg || 'Guardado'); }
+  catch(err){ setStatus(err && /conflict/i.test(String(err.code||err.message||err)) ? 'Otra pestaña guardó antes; se recargó la página.' : 'No se pudo guardar: ' + (err && (err.message||err.code) || err)); }
+}
+function startEdit(i){
+  var x = STATE.cuentas[i]; editing = i;
+  $('f_num').value = x.num||''; $('f_skins').value = x.skins||''; $('f_legend').value = x.legend||'';
+  $('f_precio').value = x.precio||''; $('f_estado').value = x.estado; $('f_desc').value = x.desc||''; $('f_img').value = '';
+  $('ftitle').textContent = '✏️ Editar Cuenta #' + x.num + ' (deja la imagen vacía para mantenerla)';
+  $('f_cancel').style.display = ''; $('f_save').textContent = 'Guardar cambios';
+  $('admin').scrollIntoView({behavior:'smooth'});
+}
+function resetForm(){
+  editing = null; ['f_num','f_skins','f_legend','f_precio','f_desc','f_img'].forEach(function(k){$(k).value=''}); $('f_estado').value='disponible';
+  $('ftitle').textContent = '➕ Subir cuenta'; $('f_cancel').style.display='none'; $('f_save').textContent='Publicar cuenta';
+}
+$('f_cancel').onclick = resetForm;
+var pendingDel = null;
+function askDelete(i){ pendingDel = i; $('ctext').textContent = '¿Eliminar la Cuenta #' + STATE.cuentas[i].num + ' de la página?'; $('confirm').classList.add('show'); }
+$('cno').onclick = function(){ $('confirm').classList.remove('show'); };
+$('cyes').onclick = function(){ $('confirm').classList.remove('show'); var next = clone(); next.cuentas.splice(pendingDel,1); save(next,'Cuenta eliminada'); };
+
+function makeThumb(file){
+  return new Promise(function(res, rej){
+    var url = URL.createObjectURL(file); var im = new Image();
+    im.onload = function(){
+      var W = 720, srcH = Math.min(im.height, im.width * 0.75);
+      var c = document.createElement('canvas'); c.width = W; c.height = Math.round(W * srcH / im.width);
+      c.getContext('2d').drawImage(im, 0, 0, im.width, srcH, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url); c.toBlob(function(b){ b ? res(b) : rej(new Error('miniatura')); }, 'image/jpeg', 0.85);
+    };
+    im.onerror = function(){ rej(new Error('No se pudo leer la imagen')); };
+    im.src = url;
+  });
+}
+$('f_save').onclick = async function(){
+  var num = $('f_num').value.trim().replace(/^#/,'');
+  if(!num){ setStatus('Pon el número de cuenta.'); return; }
+  var file = $('f_img').files[0];
+  if(editing==null && !file){ setStatus('Elige la imagen del catálogo.'); return; }
+  if(file && file.size > 20*1024*1024){ setStatus('La imagen pesa más de 20 MB. Usa la versión Cuenta_N.jpg (no la HD).'); return; }
+  var next = clone();
+  var item = editing!=null ? next.cuentas[editing] : {};
+  if(editing==null){
+    var dup = next.cuentas.some(function(x){return String(x.num)===num});
+    if(dup){ setStatus('Ya existe la Cuenta #' + num + '. Usa Editar.'); return; }
+  }
+  $('f_save').disabled = true;
+  try{
+    if(file){
+      setStatus('Subiendo imagen…');
+      var up = await assets.upload(file);
+      var tb = await makeThumb(file);
+      var upt = await assets.upload(tb);
+      item.img = up.url; item.thumb = upt.url;
+    }
+    item.num = num; item.skins = $('f_skins').value.trim(); item.legend = $('f_legend').value.trim();
+    item.precio = $('f_precio').value.trim(); item.estado = $('f_estado').value; item.desc = $('f_desc').value.trim();
+    if(editing==null){ item.fecha = new Date().toISOString().slice(0,10); next.cuentas.push(item); }
+    await save(next, 'Cuenta publicada');
+  }catch(err){ setStatus('Error: ' + (err && (err.message||err.code) || err)); }
+  $('f_save').disabled = false;
+};
+render();
+if(window.claude && claude.use){
+  Promise.all([claude.use('artifact'), claude.use('assets')]).then(function(r){
+    artifact = r[0]; assets = r[1];
+    if(artifact && assets){ $('admin').classList.add('show'); render(); }
+  }).catch(function(){});
+}
+})();
+</script>
+</body>
+</html>
